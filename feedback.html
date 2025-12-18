@@ -34,15 +34,12 @@
 
         h2 { text-align: center; color: #00f2fe; text-shadow: 0 0 10px rgba(0, 242, 254, 0.5); margin-bottom: 20px; }
 
-        /* 3. Special "All Projects" Box */
         .all-projects-box {
             background: rgba(0, 242, 254, 0.15);
             border: 1px solid #00f2fe;
             padding: 15px; border-radius: 10px; margin-bottom: 20px;
-            box-shadow: 0 0 10px rgba(0, 242, 254, 0.2);
         }
 
-        /* 4. Rating Row Design */
         .rating-row {
             display: flex; justify-content: space-between; align-items: center;
             background: rgba(255, 255, 255, 0.05);
@@ -51,19 +48,15 @@
         }
         .rating-label { font-weight: bold; color: #4efdff; flex: 1; font-size: 14px; }
 
-        /* 5. Star Logic */
         .star-rating { display: flex; flex-direction: row-reverse; }
         .star-rating input { display: none; }
-        .star-rating label {
-            font-size: 26px; color: #444; cursor: pointer; transition: 0.2s; margin-left: 5px;
-        }
+        .star-rating label { font-size: 26px; color: #444; cursor: pointer; transition: 0.2s; margin-left: 5px; }
         .star-rating input:checked ~ label,
         .star-rating label:hover,
         .star-rating label:hover ~ label {
             color: #ffca08; text-shadow: 0 0 8px rgba(255, 202, 8, 0.6);
         }
 
-        /* 6. Inputs & Button */
         label.main-label { display: block; margin: 15px 0 5px; color: #00f2fe; font-weight: bold; font-size: 14px; }
         input, textarea {
             width: 100%; padding: 12px; background: rgba(255, 255, 255, 0.1);
@@ -85,9 +78,8 @@
         <img src="https://content.jdmagicbox.com/comp/morbi/n9/9999p2822.2822.190525015714.y9n9/catalogue/green-valley-international-school-lajai-morbi-schools-macp3keq3g.jpg" alt="Logo">
     </div>
 
-    <div id="formContainer">
+    <div id="formSection">
         <h2>PROJECT FEEDBACK</h2>
-        
         <form id="feedbackForm">
             <label class="main-label">FULL NAME</label>
             <input type="text" id="vName" placeholder="Enter your name" required>
@@ -110,60 +102,45 @@
                 </div>
             </div>
 
-            <div class="rating-row">
-                <span class="rating-label">1. Science Projects</span>
-                <div class="star-rating">
-                    <input type="radio" name="science" value="5" id="sc5"><label for="sc5">★</label>
-                    <input type="radio" name="science" value="4" id="sc4"><label for="sc4">★</label>
-                    <input type="radio" name="science" value="3" id="sc3"><label for="sc3">★</label>
-                    <input type="radio" name="science" value="2" id="sc2"><label for="sc2">★</label>
-                    <input type="radio" name="science" value="1" id="sc1"><label for="sc1">★</label>
-                </div>
-            </div>
+            <div class="rating-row"><span class="rating-label">1. Science Projects</span><div class="star-rating">
+                <input type="radio" name="science" value="5" id="sc5"><label for="sc5">★</label>
+                <input type="radio" name="science" value="4" id="sc4"><label for="sc4">★</label>
+                <input type="radio" name="science" value="3" id="sc3"><label for="sc3">★</label>
+                <input type="radio" name="science" value="2" id="sc2"><label for="sc2">★</label>
+                <input type="radio" name="science" value="1" id="sc1"><label for="sc1">★</label>
+            </div></div>
 
-            <div class="rating-row">
-                <span class="rating-label">2. Robotics Projects</span>
-                <div class="star-rating">
-                    <input type="radio" name="robotics" value="5" id="ro5"><label for="ro5">★</label>
-                    <input type="radio" name="robotics" value="4" id="ro4"><label for="ro4">★</label>
-                    <input type="radio" name="robotics" value="3" id="ro3"><label for="ro3">★</label>
-                    <input type="radio" name="robotics" value="2" id="ro2"><label for="ro2">★</label>
-                    <input type="radio" name="robotics" value="1" id="ro1"><label for="ro1">★</label>
-                </div>
-            </div>
+            <div class="rating-row"><span class="rating-label">2. Robotics Projects</span><div class="star-rating">
+                <input type="radio" name="robotics" value="5" id="ro5"><label for="ro5">★</label>
+                <input type="radio" name="robotics" value="4" id="ro4"><label for="ro4">★</label>
+                <input type="radio" name="robotics" value="3" id="ro3"><label for="ro3">★</label>
+                <input type="radio" name="robotics" value="2" id="ro2"><label for="ro2">★</label>
+                <input type="radio" name="robotics" value="1" id="ro1"><label for="ro1">★</label>
+            </div></div>
 
-            <div class="rating-row">
-                <span class="rating-label">3. Maths Projects</span>
-                <div class="star-rating">
-                    <input type="radio" name="maths" value="5" id="ma5"><label for="ma5">★</label>
-                    <input type="radio" name="maths" value="4" id="ma4"><label for="ma4">★</label>
-                    <input type="radio" name="maths" value="3" id="ma3"><label for="ma3">★</label>
-                    <input type="radio" name="maths" value="2" id="ma2"><label for="ma2">★</label>
-                    <input type="radio" name="maths" value="1" id="ma1"><label for="ma1">★</label>
-                </div>
-            </div>
+            <div class="rating-row"><span class="rating-label">3. Maths Projects</span><div class="star-rating">
+                <input type="radio" name="maths" value="5" id="ma5"><label for="ma5">★</label>
+                <input type="radio" name="maths" value="4" id="ma4"><label for="ma4">★</label>
+                <input type="radio" name="maths" value="3" id="ma3"><label for="ma3">★</label>
+                <input type="radio" name="maths" value="2" id="ma2"><label for="ma2">★</label>
+                <input type="radio" name="maths" value="1" id="ma1"><label for="ma1">★</label>
+            </div></div>
 
-            <div class="rating-row">
-                <span class="rating-label">4. SS Projects</span>
-                <div class="star-rating">
-                    <input type="radio" name="ss" value="5" id="ss5"><label for="ss5">★</label>
-                    <input type="radio" name="ss" value="4" id="ss4"><label for="ss4">★</label>
-                    <input type="radio" name="ss" value="3" id="ss3"><label for="ss3">★</label>
-                    <input type="radio" name="ss" value="2" id="ss2"><label for="ss2">★</label>
-                    <input type="radio" name="ss" value="1" id="ss1"><label for="ss1">★</label>
-                </div>
-            </div>
+            <div class="rating-row"><span class="rating-label">4. SS Projects</span><div class="star-rating">
+                <input type="radio" name="ss" value="5" id="ss5"><label for="ss5">★</label>
+                <input type="radio" name="ss" value="4" id="ss4"><label for="ss4">★</label>
+                <input type="radio" name="ss" value="3" id="ss3"><label for="ss3">★</label>
+                <input type="radio" name="ss" value="2" id="ss2"><label for="ss2">★</label>
+                <input type="radio" name="ss" value="1" id="ss1"><label for="ss1">★</label>
+            </div></div>
 
-            <div class="rating-row">
-                <span class="rating-label">5. Coding Projects</span>
-                <div class="star-rating">
-                    <input type="radio" name="coding" value="5" id="co5"><label for="co5">★</label>
-                    <input type="radio" name="coding" value="4" id="co4"><label for="co4">★</label>
-                    <input type="radio" name="coding" value="3" id="co3"><label for="co3">★</label>
-                    <input type="radio" name="coding" value="2" id="co2"><label for="co2">★</label>
-                    <input type="radio" name="coding" value="1" id="co1"><label for="co1">★</label>
-                </div>
-            </div>
+            <div class="rating-row"><span class="rating-label">5. Coding Projects</span><div class="star-rating">
+                <input type="radio" name="coding" value="5" id="co5"><label for="co5">★</label>
+                <input type="radio" name="coding" value="4" id="co4"><label for="co4">★</label>
+                <input type="radio" name="coding" value="3" id="co3"><label for="co3">★</label>
+                <input type="radio" name="coding" value="2" id="co2"><label for="co2">★</label>
+                <input type="radio" name="coding" value="1" id="co1"><label for="co1">★</label>
+            </div></div>
 
             <label class="main-label">SUGGESTIONS / COMMENTS</label>
             <textarea id="msg" rows="2" placeholder="Write your feedback..."></textarea>
@@ -171,10 +148,20 @@
             <button type="submit" id="submitBtn">📤 SEND FEEDBACK</button>
         </form>
     </div>
+
+    <div id="thankYouSection" style="display: none; text-align: center; padding: 40px 10px;">
+        <div style="font-size: 60px; margin-bottom: 20px;">🎉</div>
+        <h2 style="color: #00f2fe;">THANK YOU!</h2>
+        <p style="font-size: 18px; line-height: 1.6; color: #fff; margin-top: 15px;">
+            Thank you for visiting our <br>
+            <strong style="color: #4efdff; font-size: 22px;">SCIENCE ROBO & FUN CARNIVAL</strong>
+        </p>
+        <p style="margin-top: 10px; color: #aaa;">Your feedback has been received.</p>
+       
+    </div>
 </div>
 
 <script>
-    // 1. Sync All Ratings Function
     function syncRatings(value) {
         const subjects = ['science', 'robotics', 'maths', 'ss', 'coding'];
         subjects.forEach(sub => {
@@ -183,14 +170,14 @@
         });
     }
 
-    // 2. Form Submission Logic
     const scriptURL = "https://script.google.com/macros/s/AKfycbwbxN_UgrA1lKDLIsjI66T5zXfVZamphoTmfiBnxMtytAFS6WIjBSB1BZ6R3m_fp7oQ/exec";
     const form = document.getElementById('feedbackForm');
     const btn = document.getElementById('submitBtn');
+    const formSection = document.getElementById('formSection');
+    const thankYouSection = document.getElementById('thankYouSection');
 
     form.addEventListener('submit', e => {
         e.preventDefault();
-        
         btn.disabled = true;
         btn.textContent = "⏳ Sending Data...";
 
@@ -212,17 +199,9 @@
 
         fetch(finalUrl, { method: 'GET' })
         .then(() => {
-            alert("✅ Thank You! Feedback Submitted Successfully.");
-            
-            // RESET FORM
-            form.reset();
-            
-            // RESET STARS
-            const allRadios = document.querySelectorAll('input[type="radio"]');
-            allRadios.forEach(r => r.checked = false);
-            
-            btn.disabled = false;
-            btn.textContent = "📤 SEND FEEDBACK";
+            // ફોર્મ સંતાડો અને Thank You મેસેજ બતાવો
+            formSection.style.display = 'none';
+            thankYouSection.style.display = 'block';
         })
         .catch(error => {
             console.error('Error!', error.message);
